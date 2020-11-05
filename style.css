@@ -1,3 +1,4 @@
+/* general style */
 body {padding: 0;
       margin: 0;
 }
@@ -10,14 +11,18 @@ button {outline: none;
 i {color: black;
    margin-right: 20px;
 }
+/*  */
 
-
+/* header stylings */
 header {background-color: black;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
 }
+/*  */
+
+/* section style */
 .section-one {background-image: url(../Eczite/driver.png);
               height: 70vh;
               width: 100%;
@@ -28,8 +33,8 @@ header {background-color: black;
               box-sizing: border-box;
 }
 .section-one h1 {margin-bottom: 30px;
-                 font-family: cursive;
-                 font-weight: bold;
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 font-weight: 900;
                  color: white;
                  font-size: 72px;
 }
@@ -39,8 +44,9 @@ header {background-color: black;
                      color: black;
                      border-radius: 5px;
 }
+/*  */
 
-
+/* section two style */
 .section-two h1 {text-align: center;
 }
 .section-two ul {display: flex;
@@ -56,21 +62,24 @@ header {background-color: black;
 }
 .section-two li:nth-child(4) i:nth-child(1) {margin-right: 0;
 }
+/*  */
 
-
+/* section three */
+/* section three general */
 .section-three {display: flex;
+}
+.section-three .part {flex: 1;
+}
+/* section three part one */
+.section-three .part-one {background-color: black;
+                          color:  white;
+                          padding-bottom: 10vh;
 }
 .section-three h1 {text-align: center;
                    font-weight: bold;
                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.section-three .part {flex: 1;
-}
 .section-three ol {margin-left: 50px;
-}
-.section-three .part-one {background-color: black;
-                          color:  white;
-                          padding-bottom: 10vh;
 }
 .section-three li h2 {font-weight: 900;
                       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -81,6 +90,7 @@ header {background-color: black;
                      font-style: italic;
                      opacity: .5;
 }
+/* section three part two */
 .section-three .part-two {color: black;
                           background-color: rgb(216, 216, 216);
 }
@@ -88,10 +98,10 @@ header {background-color: black;
                     height: 100%;
 }
 
-
-.section-five {text-align: center;
+/* section four */
+.section-four {text-align: center;
 }
-.section-five h1 {margin-bottom: 20px;
+.section-four h1 {margin-bottom: 20px;
 }
 .sign-btn {width: 100px;
            height: 37px;
@@ -119,34 +129,47 @@ header {background-color: black;
 .book:hover {transform: translate(5px, 5px);
              transition: .25s ease-out;
 }
+/*  */
 
+
+/* media query for small laptops */
 @media (max-width: 1350px) {
     h1 {font-size: 48px;
     }
+
     .section-two li {font-size: 36px;
     }
     .section-two li i {font-size: 26px;
     }
 }
 
+
+/* media query for tablets */
 @media (max-width: 925px) {
+
+    .section-one {padding: 70px 0 0 50px;
+    }
+
     .section-two ul li {width: 50%;
                         font-size: 26px;
     }
     .section-two ul li i {font-size: 20px;
     }
-    .section-one {padding: 70px 0 0 50px;
-    }
+
     .section-three {flex-wrap: wrap;
     }
     .section-three .part {flex: unset;
     }
 }
 
+
+/* media query for phones */
 @media (max-width: 725px) {
+
     h1, .section-one h1 {font-size: 24px;
                 text-align: center;
     }
+
     .section-one {padding: 30px 0 0 0;
     }
     .section-one h1 {font-size: 36px;
@@ -156,6 +179,7 @@ header {background-color: black;
                          font-size: 14px;
                          transform: translate(120px, -10px);
     }
+
     .section-two ul {flex-direction: column;
     }
     .section-two ul li {width: 100%;
@@ -165,6 +189,7 @@ header {background-color: black;
     .section-two ul li i {font-size: 16px;
                           margin-right: 10px;
     }
+
     .section-three ol {margin-left: 0px;
     }
 }
