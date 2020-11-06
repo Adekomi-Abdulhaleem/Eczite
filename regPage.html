@@ -1,0 +1,85 @@
+<html lang="en">
+	<head>
+		<title>Registration Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="regPage.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+			<div class="card_face card_face_front">
+				<h2>Users Registration Form</h2>
+				<form formaction="POST">				
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="email" required="required">
+						<span>Email Address</span>
+					</div>
+					
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Enter Whatsapp Phone Number</span>
+					</div>
+					<div class="submit inputBox">
+						<input type="submit" value="Submit"/>
+						<div class="flip"><a id="driver" class="flip-actionBtn"> Register as a Driver?</a></div>
+					</div>					
+				</form>
+			</div>
+			
+			<div class="card_face card_face_back ">
+				<h2>Drivers Registration Form </h2>
+				<form formaction="POST">				
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="email" required="required">
+						<span>Email Address</span>
+					</div>
+					
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Location</span>
+					</div>
+					
+					<div class="inputBox">					
+						<select id="vehicle" name="vehicleType">
+							<option value="#">Select your vehicle type.....</option>
+							<option value="bike">Bike</option>
+							<option value="car">Car</option>
+							<option value="bus">Bus</option>							
+						 </select>
+					</div>
+					
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Enter Whatsapp Phone Number</span>
+					</div>
+					<div class="inputBox">
+						<input type="submit" value="Submit"/>
+						<div class="flip"><a id="rider" class="flip-actionBtn"> Register as a Rider?</a></div>
+					</div>				
+				</form>
+			</div>
+			</div>
+		</div>
+		
+		<script  type="text/javascript">
+			var flipped = document.getElementById('driver');
+			flipped.addEventListener('click', function(){
+			document.querySelector('.container').classList.toggle('is_flipped');
+			});
+			
+			var flipped = document.getElementById('rider');
+			flipped.addEventListener('click', function(){
+			document.querySelector('.container').classList.toggle('is_flipped');
+			});
+		</script>
+	</body>
+</html>
