@@ -23,11 +23,11 @@ header {background-color: black;
 /*  */
 
 /* section style */
-.section-one {background-image: url(../Eczite/driver.png);
+.section-one {background-image: url(../Eczite/eczite-img-1.png);
               height: 70vh;
               width: 100%;
               background-repeat: no-repeat;
-              background-position: top;
+              background-position: left;
               background-size: cover;
               padding: 50px 0 0 100px;
               box-sizing: border-box;
@@ -167,10 +167,11 @@ header {background-color: black;
 @media (max-width: 725px) {
 
     h1, .section-one h1 {font-size: 24px;
-                text-align: center;
+                         text-align: center;
     }
 
     .section-one {padding: 30px 0 0 0;
+                  background-position: left;
     }
     .section-one h1 {font-size: 36px;
     }
