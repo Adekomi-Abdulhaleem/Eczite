@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+p{
+	font-size: 1em;
+	font-weight: 400;
+}
+
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	background: #000;
+}
+
+header .title{
+	text-align: center;	
+	padding: 30px;
+}
+
+header .title h3{
+	color: #fff;
+	line-height: 1.6em;
+	font-size: 2.6em;
+}
+
+section{
+	padding: 30px;
+}
+
+section .title{
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+section .title h3{
+	font-weight: 500;
+	font-size: 1.6em;
+	padding-left: 10px;
+	border-left: 5px solid #ff0157;
+}
+
+section .container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+section .container .top{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+	justify-content: space-between;
+	border-radius: 5px;
+}
+
+section .container .top .board{
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;	
+	box-shadow: 0 2px 35px rgba(0,0,0,0.05);
+	background: #555;	
+}
+
+section .container .top .board .position,
+section .container .bottom .board .personDetails .position{
+	padding-bottom: 10px;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.4em;
+	color: #fff;
+}
+
+section .container .top .board .imgBx,
+section .container .bottom .board .personDetails .imgBx{
+	position: relative;
+	width: 100px;
+	height: 100px;	
+	overflow: hidden;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 10px;	
+}
+
+section .container .top .board .imgBx img,
+section .container .bottom .board .personDetails .imgBx img{
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	top:0;
+	left:0;
+	height: 100%;
+}
+
+section .container .top .board .personDetails .name,
+section .container .bottom .board .personDetails .name{
+	color: #fff;
+	font-style: italic;
+	font-weight: 600;
+	text-transform: sentencecase;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+
+section .container .top .board .personDetails .points{
+	color: #fff;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+
+section .container .bottom{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+	border-radius: 5px;
+}
+
+section .container .bottom .board{
+	display: flex;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;	
+	box-shadow: 0 2px 35px rgba(0,0,0,0.05);
+	background: #555;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+section .container .bottom .board .personDetails{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+section .container .bottom .board .personDetails .position{
+	padding-right: 20px;
+	font-size: 1.2em;
+}
+section .container .bottom .board .personDetails .name{
+	padding-left: 20px;
+	font-size: 1.1em;
+}
+section .container .bottom .board .personDetails .imgBx{
+	width: 70px;
+	height: 70px;
+}
+
+section .container .bottom .board .points{
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 300;
+}
