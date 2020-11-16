@@ -149,12 +149,14 @@ option{
 	background: #e91e63;
 }
 
-.flip{
+.flip-actionBtn{
 	position: relative;
 	top: 15px;
 	text-align: right;
 	font-size: 12px;
-	cursor: pointer;
+	cursor: pointer; 
+	float: right;
+	
 }
 
 .flip-actionBtn:hover{
@@ -185,7 +187,7 @@ option{
 		font-size: 12px;
 	}
 	
-	.flip{
+	.flip-actionBtn{
 		font-size: 10px;
 	}
 	
