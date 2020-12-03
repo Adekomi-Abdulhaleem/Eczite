@@ -1,13 +1,13 @@
 body {padding: 0;
       margin: 0;
 }
-.flex-item {display: flex;
+.eczite-flex-item {display: flex;
 }
-.flex-center-item {display: flex;
+.eczite-flex-center-item {display: flex;
                    justify-content: center;
                    align-items: center;
 }
-.flex-spread-item {display: flex;
+.eczite-flex-spread-item {display: flex;
                    justify-content: space-between;
                    align-items: center;
 }
@@ -22,24 +22,24 @@ header {background-color: black;
 main {margin: 50px;
 }
 
-.preliminary {flex: 1;
+.eczite-preliminary {flex: 1;
               flex-direction: column;
 }
-.details {flex: 3;
+.eczite-details {flex: 3;
           height: 70vh;
           margin-left: 20px;
           box-sizing: border-box;
 }
 
-.image-line {text-align: center;
+.eczite-image-line {text-align: center;
 }
-.image-line img {height: 250px;
+.eczite-image-line img {height: 250px;
                  width: 250px;
                  border-radius: 50%;
                  margin-bottom: -20px;
 }
 
-.content {border: 1px solid #777;
+.eczite-content {border: 1px solid #777;
           background-color: rgb(235, 235, 235);
           width: 80%;
           padding: 20px;
@@ -47,16 +47,26 @@ main {margin: 50px;
           margin-top: 30px;
           border-radius: 5px;
 }
-.content ul {padding: 0 5%;
+.eczite-content ul {padding: 0 5%;
              font-size: 24px;
              color: #777;
              line-height: 48px;
 }
-.content ul span {color: black;
+.eczite-content ul span {color: black;
                   font-weight: 900;
 }
+.eczite-book {width: 120px;
+       height: 40px;
+       background-color: black;
+       color: white;
+       border-radius: 5px;
+       margin-top: 20px;
+}
+.eczite-book:hover {transform: translate(5px, 5px);
+             transition: .25s ease-out;
+}
 
-.tab-buttons {padding: 5px 10px;
+.eczite-tab-buttons {padding: 5px 10px;
               background-color: unset;
               border: 1px solid black;
               outline: none;
@@ -68,16 +78,16 @@ main {margin: 50px;
                     color: white;
 }
 
-.parts {height: fit-content;
+.eczite-parts {height: fit-content;
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
 }
-.parts .part {display: none;
+.eczite-parts .eczite-part {display: none;
 }
-.parts .part.active {display: unset;
+.eczite-parts .eczite-part.eczite-active {display: unset;
 }
-#save-btn {background-color: black;
+#eczite-save-btn {background-color: black;
            color: white;
            padding: 5px 10px;
 }
@@ -101,7 +111,7 @@ th {
   font-size: 36px;
 }
 
-.part-two input  {width: 70%;
+.eczite-part-two input  {width: 70%;
                   margin: 20px;
                   height: 5vh;
 }
@@ -110,11 +120,11 @@ th {
     main {margin: 50px 20px;
           flex-wrap: wrap;
     }
-    .content {width: 100%;
+    .eczite-content {width: 100%;
     }
-    .part-two input {width: 90%;
+    .eczite-part-two input {width: 90%;
     }
-    .tab-buttons {margin-top: 20px;
+    .eczite-tab-buttons {margin-top: 20px;
     }
 }
 
@@ -127,6 +137,6 @@ th {
     th {padding: 20px 10px;
         font-size: 24px;
     }
-    .tab-buttons {font-size: 16px;
+    .eczite-tab-buttons {font-size: 16px;
     }
 }

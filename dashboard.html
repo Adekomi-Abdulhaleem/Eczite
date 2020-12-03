@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="../Eczite/dashboard.css">
 </head>
 <body>
-    <header class="flex-center-item">
+    <header class="eczite-flex-center-item">
         <h1>Eczite</h1>
     </header>
-    <main class="flex-center-item">
-        <div class="preliminary flex-center-item">
-            <div class="image-line">
+    <main class="eczite-flex-center-item">
+        <div class="eczite-preliminary eczite-flex-center-item">
+            <div class="eczite-image-line">
                 <img src="../Eczite/images (2).png" alt="">
                 <h1>John Doe</h1>
-                <label for="user-image">Upload image</label> <br>
-                <input type="file" name="user-image" id="user-image">
-                <button id="save-btn">Save</button>
+                <label for="eczite-user-image">Upload image</label> <br>
+                <input type="file" name="eczite-user-image" id="eczite-user-image">
+                <button id="eczite-save-btn">Save</button>
             </div>
-            <div class="content">
+            <div class="eczite-content">
                 <h1>Activity</h1>
                 <ul>
-                    <li class="flex-spread-item">Rides: <span>24</span></li> <hr>
-                    <li class="flex-spread-item">Ranking: <span>53</span></li> <hr>
-                    <li class="flex-spread-item">Level: <span>Amateur</span></li>
+                    <li class="eczite-flex-spread-item">Rides: <span>24</span></li> <hr>
+                    <li class="eczite-flex-spread-item">Ranking: <span>53</span></li> <hr>
+                    <li class="eczite-flex-spread-item">Level: <span>Amateur</span></li>
                 </ul>
             </div>
+            <button class="eczite-book">Book a ride</button>
         </div>
-        <div class="details">
-            <button class="tab-buttons">Profile</button>
-            <button class="tab-buttons">Settings</button>
-            <button class="tab-buttons">Leaderboard</button>
+        <div class="eczite-details">
+            <button class="eczite-tab-buttons">Profile</button>
+            <button class="eczite-tab-buttons">Settings</button>
+            <button class="eczite-tab-buttons">Leaderboard</button>
 
-<div class="parts">
-    <div class="part part-one active">
+<div class="eczite-parts">
+    <div class="eczite-part eczite-part-one eczite-active">
         <table>
             <tr>
               <th colspan="2">Profile</th>
@@ -61,23 +62,23 @@
             </tr>
           </table>   
     </div> <br>
-    <div class="part part-two">
+    <div class="eczite-part eczite-part-two">
         <form action="">
             <label for="first-name">First Name:</label> <br>
-            <input type="text" id="first-name" placeholder="Input firstname"> <br>
+            <input type="text" id="eczite-first-name" placeholder="Input firstname"> <br>
             <label for="last-name">Last Name:</label> <br>
-            <input type="text" id="last-name" placeholder="Input lastname"> <br>
+            <input type="text" id="eczite-last-name" placeholder="Input lastname"> <br>
             <label for="phone">Phone:</label> <br>
-            <input type="number" id="phone" placeholder="Input phone no"> <br>
+            <input type="number" id="eczite-phone" placeholder="Input phone no"> <br>
             <label for="email">Email:</label> <br> 
-            <input type="email" id="email" placeholder="Input email"> <br>
+            <input type="email" id="eczite-email" placeholder="Input email"> <br>
             <label for="password1">Password:</label> <br>
-            <input type="password" id="password1" placeholder="Set password"> <br>
+            <input type="password" id="eczite-password1" placeholder="Set password"> <br>
             <label for="password2">Conform Password:</label> <br>
-            <input type="password" id="password2" placeholder="Repeat password">
+            <input type="password" id="eczite-password2" placeholder="Repeat password">
         </form>
     </div><br>
-    <div class="part part-three">
+    <div class="eczite-part eczite-part-three">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium aut quos, debitis doloribus ducimus neque harum, beatae quas dignissimos totam officia dolorum voluptatum maiores facere voluptates laudantium asperiores ipsum.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti tempore vero excepturi doloribus temporibus maiores dolores magni, aperiam velit, esse deserunt ab qui vitae eum hic? Numquam, explicabo. Hic?
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quos quasi temporibus dolore aperiam? Unde distinctio dignissimos, excepturi beatae saepe sequi impedit dicta, accusamus facilis ratione error tenetur, cupiditate accusantium.
@@ -90,8 +91,8 @@
     </footer>
     <script>
 
-        var buttons = document.querySelectorAll('.tab-buttons')
-        var eachPart = document.getElementsByClassName('part')
+        var buttons = document.querySelectorAll('.eczite-tab-buttons')
+        var eachPart = document.getElementsByClassName('eczite-part')
     
     buttons.forEach(function (item, index) {
         item.addEventListener('click', (event) => {
@@ -99,10 +100,10 @@
             for (i = 0; i < eachPart.length; i++) {
                 var textNotShow = eachPart[i]
                 var textToShow = eachPart[number]
-            textNotShow.classList.remove("active")
+            textNotShow.classList.remove("eczite-active")
             }
             console.log(textToShow)
-            textToShow.classList.add("active")
+            textToShow.classList.add("eczite-active")
     })
     })
     </script>

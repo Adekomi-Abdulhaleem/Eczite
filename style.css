@@ -136,17 +136,6 @@ header {background-color: black;
 .eczite-sign-btn:hover > a {color: black;
                      transition: .25s;
 }
-/* .book {width: 120px;
-       height: 40px;
-       background-color: black;
-       color: white;
-       border-radius: 5px;
-       margin-top: 20px;
-}
-.book:hover {transform: translate(5px, 5px);
-             transition: .25s ease-out;
-} */
-/*  */
 
 
 /* media query for small laptops */
