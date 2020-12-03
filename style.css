@@ -17,45 +17,28 @@ i {color: black;
 header {background-color: black;
         color: white;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 0 15%;
-}
-.eczite-sign-btn {width: 100px;
-    height: 37px;
-    background-color: unset;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-.eczite-sign-btn a {text-decoration: none;
-      color: white;
-}
-.eczite-sign-btn:hover {background-color: white;
-          transition: .25s;
-}
-.eczite-sign-btn:hover > a {color: black;
-              transition: .25s;
 }
 /*  */
 
 /* section style */
-.eczite-section-one {background-image: url(../Eczite/eczite-img-1.png);
+.section-one {background-image: url(../Eczite/eczite-img-1.png);
               height: 70vh;
               width: 100%;
               background-repeat: no-repeat;
               background-position: left;
               background-size: cover;
-              padding: 50px 0 0 15%;
+              padding: 50px 0 0 100px;
               box-sizing: border-box;
 }
-.eczite-section-one h1 {margin-bottom: 30px;
+.section-one h1 {margin-bottom: 30px;
                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                  font-weight: 900;
                  color: white;
-                 font-size: 96px;
+                 font-size: 72px;
 }
-.eczite-section-one button {width: 150px;
+.section-one button {width: 150px;
                      height: 45px;
                      background-color: white;
                      color: black;
@@ -64,79 +47,79 @@ header {background-color: black;
 /*  */
 
 /* section two style */
-.eczite-section-four h1 {text-align: center;
+.section-four h1 {text-align: center;
 }
-.eczite-section-four ul {display: flex;
+.section-four ul {display: flex;
                  justify-content: space-around;
                  flex-wrap: wrap;
 }
-.eczite-section-four li {width: 30%;
+.section-four li {width: 30%;
                  color: #777;
                  font-size: 46px;
                  margin-bottom: 100px;
 }
-.eczite-section-four li i {font-size: 36px;
+.section-four li i {font-size: 36px;
 }
-.eczite-section-four li:nth-child(4) i:nth-child(1) {margin-right: 0;
+.section-four li:nth-child(4) i:nth-child(1) {margin-right: 0;
 }
 /*  */
 
 /* section three */
 /* section three general */
-.eczite-section-two {display: flex;
+.section-two {display: flex;
 }
-.eczite-section-two .eczite-part {flex: 1;
+.section-two .part {flex: 1;
 }
 /* section three part one */
-.eczite-section-two .eczite-part-one {background-color: black;
+.section-two .part-one {background-color: black;
                           color:  white;
                           padding-bottom: 10vh;
 }
-.eczite-section-two h1 {text-align: center;
+.section-two h1 {text-align: center;
                    font-weight: bold;
                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.eczite-section-two ol {margin-left: 50px;
+.section-two ol {margin-left: 50px;
 }
-.eczite-section-two li h2 {font-weight: 900;
+.section-two li h2 {font-weight: 900;
                       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                       font-size: 30px;
 }
-.eczite-section-two li p {font-size: 22px;
+.section-two li p {font-size: 22px;
                      color: rgb(216, 216, 216);
                      font-style: italic;
                      opacity: .5;
 }
 /* section three part two */
-.eczite-section-two .eczite-part-two {color: black;
+.section-two .part-two {color: black;
                           background-color: rgb(216, 216, 216);
 }
-.eczite-section-two img {width: 100%;
+.section-two img {width: 100%;
                     height: 100%;
 }
 
 /* section four */
-.eczite-section-three {text-align: center;
+.section-three {text-align: center;
 }
-.eczite-section-three h1 {margin-bottom: 20px;
+.section-three h1 {margin-bottom: 20px;
 }
-.eczite-sign-btn {width: 100px;
+.sign-btn {width: 100px;
            height: 37px;
            background-color: unset;
-           border: 1px solid white;
+           border: 1px solid black;
            border-radius: 5px;
            margin-right: 20px;
 }
-.eczite-sign-btn a {text-decoration: none;
-             color: white;
+.sign-btn a {text-decoration: none;
+             color: black;
 }
-.eczite-sign-btn:hover {background-color: white;
+.sign-btn:hover {background-color: black;
                  transition: .25s;
 }
-.eczite-sign-btn:hover > a {color: black;
+.sign-btn:hover > a {color: white;
                      transition: .25s;
 }
-/* .book {width: 120px;
+.book {width: 120px;
        height: 40px;
        background-color: black;
        color: white;
@@ -145,7 +128,7 @@ header {background-color: black;
 }
 .book:hover {transform: translate(5px, 5px);
              transition: .25s ease-out;
-} */
+}
 /*  */
 
 
@@ -154,9 +137,9 @@ header {background-color: black;
     h1 {font-size: 48px;
     }
 
-    .eczite-section-four li {font-size: 36px;
+    .section-four li {font-size: 36px;
     }
-    .eczite-section-four li i {font-size: 26px;
+    .section-four li i {font-size: 26px;
     }
 }
 
@@ -164,20 +147,18 @@ header {background-color: black;
 /* media query for tablets */
 @media (max-width: 925px) {
 
-    .eczite-section-one {height: 60vh;
-    }
-    .eczite-section-one h1 {font-size: 72px;
+    .section-one {padding: 70px 0 0 50px;
     }
 
-    .eczite-section-four ul li {width: 50%;
+    .section-four ul li {width: 50%;
                         font-size: 26px;
     }
-    .eczite-section-four ul li i {font-size: 20px;
+    .section-four ul li i {font-size: 20px;
     }
 
-    .eczite-section-two {flex-wrap: wrap;
+    .section-two {flex-wrap: wrap;
     }
-    .eczite-section-two .eczite-part {flex: unset;
+    .section-two .part {flex: unset;
     }
 }
 
@@ -185,40 +166,31 @@ header {background-color: black;
 /* media query for phones */
 @media (max-width: 725px) {
 
-    header {padding: 0 5%;
-    }
-    .eczite-sign-btn {width: 55px;
-        height: 22px;
-        border-radius: 3px;
-    }
-    .eczite-sign-btn a {font-size: 10px;
-    }
-
-    h1, .eczite-section-one h1 {font-size: 24px;
+    h1, .section-one h1 {font-size: 24px;
                          text-align: center;
     }
 
-    .eczite-section-one {padding: 30px 0 0 0;
+    .section-one {padding: 30px 0 0 0;
                   background-position: left;
     }
-    .eczite-section-one h1 {font-size: 36px;
+    .section-one h1 {font-size: 36px;
     }
-    /* .section-one button {width: 120px;
+    .section-one button {width: 120px;
                          height: 40px;
                          font-size: 14px;
                          transform: translate(120px, -10px);
-    } */
-
-    .eczite-section-four ul {flex-direction: column;
     }
-    .eczite-section-four ul li {width: 100%;
+
+    .section-four ul {flex-direction: column;
+    }
+    .section-four ul li {width: 100%;
                         font-size: 24px;
                         margin-bottom: 50px;
     }
-    .eczite-section-four ul li i {font-size: 16px;
+    .section-four ul li i {font-size: 16px;
                           margin-right: 10px;
     }
 
-    .eczite-section-two ol {margin-left: 0px;
+    .section-two ol {margin-left: 0px;
     }
 }
